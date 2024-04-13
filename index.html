@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/8406aef034.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Tailwind Landing page</title>
+</head>
+<body id="hide">
+  <section id="hero" class="w-[100%]">
+    <div class="relative">
+      <!-- menu/logo-cont -->
+      <div class="absolute top-0 right-0 hidden md:flex md:w-[550px] -z-10">
+        <img src="images/designer_1.svg" alt="">
+      </div>
+      <nav class="w-[90%] mx-auto h-12 flex justify-between items-center">
+        <!-- left -->
+        <div class="hidden md:flex items-center">
+          <div class="flex items-center space-x-5">
+            <div class="group">
+              <a href="#hero" class="nav-one ">Home</a>
+              <div class="nav-hover"></div>
+            </div>
+            <div class="group">
+              <a href="#about" class="nav-one ">About</a>
+              <div class="nav-hover"></div>
+            </div>
+            <div class="group">
+              <a href="#pricing" class="nav-one ">Pricing</a>
+              <div class="nav-hover"></div>
+            </div>
+            <div class="group">
+              <a href="#contact" class="nav-one ">Contact</a>
+              <div class="nav-hover"></div>
+            </div>
+          </div>
+        </div>
+        <!-- middle -->
+        <div>
+          <p class="text-2xl text-[#505F98] font-roboto font-extrabold">Landing</p>
+        </div>
+        <!-- right -->
+        <div class="hidden md:flex">
+          <button class="bg-[#111B47] font-roboto font-medium text-xs flex justify-center items-center text-white outline-none border-none w-24 h-5">Buy Now</button>
+        </div>
+        <!--  hamburger-btn --> 
+        <div class="md:hidden">
+          <button id="menu-btn" type="button" class="z-40 block hamburger  md:hidden focus:outline-none">
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- mobile-menu -->
+      <div id="menu" class="absolute top-0 flex-col justify-center hidden w-full h-56 py-1 pt-2 pl-12 space-y-3 text-lg text-[#141b35] uppercase bg-[#505F98]">
+        <a href="#hero" class="hover:text-gray-500">Home</a>
+        <a href="#about" class="hover:text-gray-500">About</a>
+        <a href="#pricing" class="hover:text-gray-500">Pricing</a>
+        <a href="#contact" class="hover:text-gray-500">Contacts</a>
+        <!-- <a href="#" class="hover:text-gray-500">Buy Now</a> -->
+      </div>
+    </div>
+    <div class="md:ml-16 md:mt-24 z-10 space-y-2 md:space-y-6 lg:ml-32 xl:ml-40">
+      <p class="w-full text-center md:w-96 md:text-start lg:w-[400px] xl:w-[550px] font-roboto font-medium text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl text-[#091133] sm:leading-10 tracking-wide">Introduce Your Product Quickly & Effectively</p>
+      <p class="ipsum-hero">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commod
+        o ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur .
+      </p>
+      <p class="ipsum-hero">
+        ridiculus mus. Donec quam felis, ultricies nec, p
+        ellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+      </p>
+      <div class="flex justify-center md:justify-start space-x-3 md:space-x-6">
+        <button class="bg-[#111B47] font-roboto font-medium leading-6 text-center text-white text-xs md:text-base w-28 h-6 md:w-40 md:h-9">Purchase UI Kit</button>
+        <button class="border-solid border-2 font-roboto leading-6 text-center border-[#091133] text-[#091133] text-xs md:text-base w-28 h-6 md:w-40 md:h-9">Learn More</button>
+      </div>  
+    </div>
+  </section>
+  <section id="about" class="mt-10 md:mt-36">
+    <!-- top path -->
+    <div class="relative w-[90%] mx-auto">
+      <div class="flex flex-col justify-center space-y-10 ">
+        <div class="">
+          <p class="font-roboto font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#091133] text-center md:text-start">Light, Fast & Powerful</p>
+          <p class="ipsum-two mb-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commod
+            o ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur .
+          </p>
+          <p class="ipsum-two">ridiculus mus. Donec quam felis, ultricies nec, p
+            ellentesque eu, pretium quis, sem. Nulla consequat massa quis enim
+          </p>
+        </div>
+        <div class="flex flex-col items-center mt-3 space-y-5 md:flex-row">
+          <div class="flex flex-col justify-center items-center md:justify-start md:items-start ">
+            <i class="fa-solid fa-object-ungroup"></i>
+            <p class="title-goes">Title Goes Here</p>
+            <p class=" title-ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+          </div>
+          <div class="flex flex-col justify-center items-center  md:justify-start md:items-start">
+            <i class="fa-solid fa-object-ungroup"></i>
+            <p class="title-goes">Titile Goes Here</p>
+            <p class="title-ipsum">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+          </div>
+        </div>
+      </div>
+      <div class="hidden md:flex w-96 absolute right-0 top-0 -z-10">
+        <img src="images/Group.svg" alt="">
+      </div>
+    </div>
+    <!-- down path -->
+    <div class="w-[90%] mx-auto mt-20 md:mt-56 flex flex-col space-y-12">
+      <div class="flex flex-col items-center space-y-8 md:flex-row md:space-y-0 md:space-x-14">
+        <div class="">
+          <img src="images/undraw_happy_news_hxmt.svg" class="w-56 md:w-[550px]" alt="">
+        </div>
+        <div>
+          <p class="font-roboto font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#091133] text-center md:text-start mb-4">
+            Light, Fast & Powerful
+          </p>
+          <p class="about-ipsum">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+          </p>
+          <p class="about-ipsum">
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          </p>
+        </div>
+      </div>
+      <div class="title-cards">
+        <div class="">
+          <img src="images/undraw_social_influencer_sgsv.svg" class="w-56 md:w-[550px]" alt="">
+        </div>
+        <div>
+          <p class="font-roboto font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#091133] text-center md:text-start">
+            Light, Fast & Powerful
+          </p>
+          <p class="about-ipsum">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+          </p>
+          <p class="about-ipsum">
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          </p>
+        </div>
+      </div>
+      <div class="title-cards">
+        <div class="">
+          <img src="images/undraw_mention_6k5d.svg" class="w-56 md:w-[550px]" alt="">
+        </div>
+        <div >
+          <p class="font-roboto font-medium text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#091133] text-center md:text-start">
+            Light, Fast & Powerful
+          </p>
+          <p class="about-ipsum">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+          </p>
+          <p class="about-ipsum">
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <button class=" bg-[#111B47] font-roboto font-medium leading-6 text-center text-white text-xs md:text-base w-28 h-6 md:w-40 md:h-9 ">Purchase Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="curve-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1" d="M0,128L120,138.7C240,149,480,171,720,170.7C960,171,1200,149,1320,138.7L1440,128L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z">
+      </path>
+    </svg>
+  </div>
+  <section id="pricing" class="relative">
+    <div class="bg-[#E7ECFF] space-y-5 md:grid md:grid-cols-2 place-content-center place-items-center -mt-5 md:-mt-10 xl:-mt-16 pb-4 md:pb-10 lg:pb-16 xl:pb-20">
+      <div class="md:col-span-2">
+        <p class="font-roboto font-medium text-base sm:text-lg md:text-xl lg:text-2xl xl:text-4xl text-center text-[#091133]">A Price To Suit Everyone</p>
+        <p class="font-roboto font-normal text-[#6F7CB2] text-sm md:text-base lg:text-lg xl:text-xl text-center lg:w-[700px]">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+        </p>
+      </div>
+      <div class="">
+        <p class="font-roboto font-medium text-[#222F65] text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl text-center ">$40</p>
+        <p class="font-roboto font-normal text-[#37447E] text-base md:text-lg lg:text-xl xl:text-2xl text-center">UI Design Kit</p>
+      </div>
+      <div class=" flex flex-col justify-center items-center">
+        <p class="font-roboto font-normal text-[#37447E] text-sm md:text-base xl:text-xl">see, One price, Simple</p>
+        <button class=" bg-[#111B47] font-roboto font-medium leading-6 text-center text-white text-xs md:text-base w-28 h-6 md:w-40 md:h-9">Purchase Now</button>
+      </div>
+    </div>
+  </section>
+  <footer id="contact" class="bg-[#d8e1ff]">
+    <div class="w-[90%] mx-auto flex flex-col space-y-3 pt-8 pb-8">
+      <div class="flex justify-between items-center">
+        <p class="font-roboto font-medium text-sm md:text-base lg:text-lg text-[#939EA4]">@2024 Yourcompany</p>
+        <p class="text-2xl text-[#505F98] font-roboto font-extrabold">Landing</p>
+        <button class=" bg-[#111B47] font-roboto font-medium leading-6 text-center text-white text-xs md:text-base w-28 h-6 md:w-40 md:h-9 hidden md:flex justify-center items-center">Purchase Now</button>
+      </div>
+      <hr class="text-[#CDD1D4] bg-[#CDD1D4]">
+      <div class="flex flex-col space-y-3 sm:flex-row md:space-y-0 justify-between items-center">
+        <div class="flex space-x-3">
+          <div class="group">
+            <a href="#hero" class="nav-one ">Home</a>
+            <div class="nav-hover"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="nav-one ">About</a>
+            <div class="nav-hover"></div>
+          </div>
+          <div class="group">
+            <a href="#" class="nav-one ">Contact</a>
+            <div class="nav-hover"></div>
+          </div>
+        </div>
+        <div class="flex space-x-3">
+          <img src="images/icon-facebook.svg" alt="">
+          <img src="images/icon-instagram.svg" alt="">
+          <img src="images/icon-pinterest.svg" alt="">
+          <img src="images/icon-twitter.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+.nav-one{
+  @apply text-[#505F98] no-underline font-roboto text-sm font-normal;
+}
+.nav-hover{
+  @apply mx-1 group-hover:border-b-2 group-hover:border-[#202f6b] transition ease-in-out delay-100 duration-300;
+}
+.ipsum-hero{
+  @apply text-[#505F98] font-normal text-center md:text-start md:w-[450px] lg:w-[650px] xl:w-[850px] text-sm md:text-lg leading-5 sm:leading-7;
+}
+.ipsum-two{
+  @apply font-roboto font-normal text-sm md:text-base xl:text-lg text-[#6F7CB2] leading-3 md:leading-6 text-start md:w-[420px] z-10;
+}
+.title-goes{
+  @apply text-[#091133] text-sm md:text-base xl:text-lg font-roboto font-medium;
+}
+.title-ipsum{
+  @apply font-roboto font-normal text-xs md:text-base xl:text-lg text-[#091133] text-center md:text-start md:w-64;
+}
+.about-ipsum{
+  @apply font-roboto font-normal text-[#6F7CB2] text-xs md:text-base xl:text-lg text-center md:text-start;
+}
+.title-cards{
+  @apply flex flex-col items-center space-y-8 md:flex-row md:space-y-0 md:space-x-14;
+}
+.curve-svg svg{
+  background-color: #E7ECFF;
+   /* background-color: red; */
+}
+.hamburger {
+  cursor:pointer;
+  width: 24px;
+  height:24px;
+  transition:all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position:absolute;
+  width:24px;
+  height:2px;
+  top:10px;
+  left:0;
+  background: black;
+  transform:rotate(0);
+  transition:all 0.5s;
+}
+.hamburger-middle{
+  transform: translateY(7px);
+}
+
+ .hamburger-bottom{
+  transform: translateY(14px);
+} 
+
+.open {
+  transform: rotate(90deg);
+  transition:all 0.5s;
+} 
+
+.open .hamburger-top{
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle{
+  display: none;
+}
+
+.open .hamburger-bottom{
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
